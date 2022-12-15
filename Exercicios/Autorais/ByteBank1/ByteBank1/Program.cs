@@ -23,27 +23,9 @@ namespace ByteBank1 {
             this.cpf = Console.ReadLine();
         }
         /*
-         Verificar se o cpf é valido, usar dps
+         Verificar se o cpf é valido com um expressao regular, usar dps
         if (!(Regex.IsMatch(this.cpf, "([0-9]{2}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[\\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[-]?[0-9]{2})")))
         */
-        public bool retirarSaldo(double valor)
-        {
-            if (this.saldo - valor >= 0)
-            {
-                this.saldo -= valor;
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-
-        }
-
-        public void AddSaldo(double valor)
-        {
-            this.saldo += valor;
-        }
 
         public override string ToString()
         {
@@ -169,6 +151,9 @@ namespace ByteBank1 {
                             Console.WriteLine("Saque realizado com sucesso");
                         else
                             Console.WriteLine("Saldo insuficiente");
+                        break;
+                    default:
+                        Console.WriteLine("Codigo digitado não encontrado");
                         break;
                 }
 

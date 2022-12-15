@@ -9,6 +9,25 @@
         public string phone { get; set; }
         public double saldo { get; set; }
 
+        public bool retirarSaldo(double valor)
+        {
+            if (this.saldo - valor >= 0)
+            {
+                this.saldo -= valor;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
+
+        public void AddSaldo(double valor)
+        {
+            this.saldo += valor;
+        }
+
         public override bool Equals(object? obj)
         {
             return base.Equals(obj);
