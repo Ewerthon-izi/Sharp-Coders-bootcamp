@@ -13,3 +13,18 @@ C:\Aulas\Turmas\Sharp Coders\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\n
 C:\Aulas\Turmas\Sharp Coders\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.pdb
 C:\Aulas\Turmas\Sharp Coders\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.genruntimeconfig.cache
 C:\Aulas\Turmas\Sharp Coders\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ref\ByteBank1.dll
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.csproj.AssemblyReference.cache
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.AssemblyInfoInputs.cache
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.AssemblyInfo.cs
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.csproj.CoreCompileInputs.cache
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.dll
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\refint\ByteBank1.dll
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.pdb
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\bin\Debug\net6.0\ByteBank1.exe
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\bin\Debug\net6.0\ByteBank1.deps.json
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\bin\Debug\net6.0\ByteBank1.runtimeconfig.json
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\bin\Debug\net6.0\ByteBank1.dll
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\bin\Debug\net6.0\ByteBank1.pdb
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ByteBank1.genruntimeconfig.cache
+C:\Users\eweri\Desktop\sharpcoders\Sharp-Coders-bootcamp\Exercicios\Autorais\ByteBank1\ByteBank1\obj\Debug\net6.0\ref\ByteBank1.dll
