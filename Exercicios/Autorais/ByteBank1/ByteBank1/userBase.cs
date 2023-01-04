@@ -2,18 +2,24 @@
 {
     public class userBase
     {
-        public string email { get; set; }
-        public string nome { get; set; }
-        public string cpf { get; set; }
-        public string password { get; set; }
-        public string phone { get; set; }
-        public double saldo { get; set; }
+        private string email;
+        private string nome;
+        private string cpf;
+        private string password;
+        private string phone;
+        private double saldo;
+        public string Email { get => email; set => email = value; }
+        public string Nome { get => nome; set => nome = value; }
+        public string Cpf { get => cpf; set => cpf = value; }
+        public string Password { get => password; set => password = value; }
+        public string Phone { get => phone; set => phone = value; }
+        public double Saldo { get => saldo; set => saldo = value; }
 
         public bool retirarSaldo(double valor)
         {
-            if (this.saldo - valor >= 0)
+            if (this.Saldo - valor >= 0)
             {
-                this.saldo -= valor;
+                this.Saldo -= valor;
                 return true;
             }
             else
@@ -25,14 +31,14 @@
 
         public void AddSaldo(double valor)
         {
-            this.saldo += valor;
+            this.Saldo += valor;
         }
 
         public bool Login(string email, string password)
         {
-            if (!(this.email == email))
+            if (!(this.Email == email))
                 return false;
-            if(!(this.password== password)) 
+            if(!(this.Password== password)) 
                 return false;
             return true;
         }
