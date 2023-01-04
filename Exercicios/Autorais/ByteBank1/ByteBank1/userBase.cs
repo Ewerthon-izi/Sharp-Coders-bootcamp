@@ -28,6 +28,15 @@
             this.saldo += valor;
         }
 
+        public bool Login(string email, string password)
+        {
+            if (!(this.email == email))
+                return false;
+            if(!(this.password== password)) 
+                return false;
+            return true;
+        }
+
         public override bool Equals(object? obj)
         {
             return base.Equals(obj);
