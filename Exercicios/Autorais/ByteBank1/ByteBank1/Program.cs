@@ -21,8 +21,8 @@ namespace ByteBank1 {
             this.password = Console.ReadLine();
             Console.Write("email: ");
             this.email = Console.ReadLine();
-            Console.Write("telefone: ");
             do{
+                Console.Write("telefone: ");
                 this.phone = Console.ReadLine();
                 /*
                 Essa expressão permite colocar o telefone com parentes e hifem, porem nao sao obrigatorios, 
