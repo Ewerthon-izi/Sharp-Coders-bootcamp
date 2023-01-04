@@ -15,28 +15,35 @@ namespace ByteBank1 {
             Console.Write("Nome: ");
             this.nome = Console.ReadLine();
             Console.Write("senha: ");
+            /* 
+             email é muito dificil validar com expressão regular dado as variedades possiveis de email, entao resolvi nao utilizar
+             */
             this.password = Console.ReadLine();
             Console.Write("email: ");
             this.email = Console.ReadLine();
             Console.Write("telefone: ");
             do{
                 this.phone = Console.ReadLine();
+                /*
+                Essa expressão permite colocar o telefone com parentes e hifem, porem nao sao obrigatorios, 
+                como nao deixei claro como deve ser inserido o telefone resolvi deixar opcional
+                Caso fosse utilizado em um banco de dados, o dado deveria ser padronizado
+                */
                 this.resultExp = Regex.IsMatch(this.phone, "^\\(?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$");
                 if (!this.resultExp)
                     Console.WriteLine("Insira um telefone valido");
             } while (!this.resultExp);
-            Console.Write("cpf: ");
             do {
+                Console.Write("cpf: ");
                 this.cpf = Console.ReadLine();
+                /*
+                Mesmo caso do comentario anterior, permite colocar ponto e hifem mas e opcional
+                */
                 this.resultExp = Regex.IsMatch(this.cpf, "([0-9]{2}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[\\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[-]?[0-9]{2})");
                 if (!this.resultExp)
                     Console.WriteLine("Insira um CPF valido");
             } while (!this.resultExp);
         }
-        /*
-         Verificar se o cpf é valido com um expressao regular, usar dps
-        if (!(Regex.IsMatch(this.cpf, "([0-9]{2}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[\\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[-]?[0-9]{2})")))
-        */
 
         public override string ToString()
         {
@@ -51,7 +58,7 @@ namespace ByteBank1 {
             Console.WriteLine("1 - Inserir novo usuário");
             Console.WriteLine("2 - Deletar um usuário");
             Console.WriteLine("3 - Detalhes de um usuário");
-            Console.WriteLine("4 - Total armazenado no banco");
+            Console.WriteLine("4 - Todos usuarios cadastrados");
             Console.WriteLine("5 - transferencia bancaria");
             Console.WriteLine("6 - Depositar");
             Console.WriteLine("7 - Sacar");
@@ -112,7 +119,8 @@ namespace ByteBank1 {
                             Console.WriteLine("Usuario não encontrado");
                         break;
                     case 4:
-                        Console.WriteLine(usuarios.Count());
+                        foreach (User i in usuarios)
+                            Console.WriteLine(i);
                         break;
                     case 5:
                         //Como o sistema não possui um sistema de login, o cpf do usuario deve ser informado, caso possuisse um login o usuario nao precisaria informar seu cpf
