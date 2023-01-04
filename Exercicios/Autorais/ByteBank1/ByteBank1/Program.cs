@@ -8,6 +8,7 @@ namespace ByteBank1 {
     
     public class User : userBase
     {
+        private bool resultExp;
         public User()
         {
             Console.WriteLine(" Bem vindo\nEntre com seus dados");
@@ -18,9 +19,19 @@ namespace ByteBank1 {
             Console.Write("email: ");
             this.email = Console.ReadLine();
             Console.Write("telefone: ");
-            this.phone = Console.ReadLine();
+            do{
+                this.phone = Console.ReadLine();
+                this.resultExp = Regex.IsMatch(this.phone, "^\\(?(?:[14689][1-9]|2[12478]|3[1234578]|5[1345]|7[134579])\\)? ?(?:[2-8]|9[1-9])[0-9]{3}\\-?[0-9]{4}$");
+                if (!this.resultExp)
+                    Console.WriteLine("Insira um telefone valido");
+            } while (!this.resultExp);
             Console.Write("cpf: ");
-            this.cpf = Console.ReadLine();
+            do {
+                this.cpf = Console.ReadLine();
+                this.resultExp = Regex.IsMatch(this.cpf, "([0-9]{2}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[\\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\\.]?[0-9]{3}[\\.]?[0-9]{3}[-]?[0-9]{2})");
+                if (!this.resultExp)
+                    Console.WriteLine("Insira um CPF valido");
+            } while (!this.resultExp);
         }
         /*
          Verificar se o cpf é valido com um expressao regular, usar dps
