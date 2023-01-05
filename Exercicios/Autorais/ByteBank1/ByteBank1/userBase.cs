@@ -31,7 +31,10 @@
 
         public void AddSaldo(double valor)
         {
-            this.Saldo += valor;
+            if (valor > 0)
+                this.Saldo += valor;
+            else
+                Console.WriteLine("Valor informado invalido");
         }
 
         public bool Login(string email, string password)

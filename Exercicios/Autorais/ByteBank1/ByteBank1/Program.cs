@@ -5,7 +5,7 @@ using System.Transactions;
 
 namespace ByteBank1 {
 
-    
+    //utilizei herança para testar, neste caso como não ha mais de um tipo de usuario não seria necessario
     public class User : userBase
     {
         private bool resultExp;
@@ -15,7 +15,7 @@ namespace ByteBank1 {
             Console.Write("Nome: ");
             this.Nome = Console.ReadLine();
             Console.Write("senha: ");
-
+            
             /* 
              email é muito dificil validar com expressão regular dado as variedades possiveis de email, entao resolvi nao utilizar
              */
